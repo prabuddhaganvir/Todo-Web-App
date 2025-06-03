@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://todo-web-app-backend-ynim.onrender.com',
+        target: 'http://localhost:5001', // Adjust the target URL to your backend server
         changeOrigin: true,
       },
     },
