@@ -46,7 +46,7 @@ function App() {
     try {
       const res = await axios.get("/api/");
       setTodos(res.data);
-      console.log("Todos fetched successfully:", res.data);
+      // console.log("Todos fetched successfully:", res.data);
     } catch (error) {
       console.log("Error fetching todos:", error);
     }
